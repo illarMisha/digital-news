@@ -1,0 +1,96 @@
+@import "_fonts";
+@import "_null";
+@import "_classes";
+
+.header-backg, .main-backg{
+    background-color:#2e1932;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:#2e1932;
+    .header__inner{
+        margin-left: 90px;
+        margin-top: 60px;
+      .header__logo{
+          display: flex;
+          align-items:center;
+          .img-logo{
+            width: 90px;
+          }
+      }
+      .header__title{
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: 64px;
+      }
+      .nav{
+          margin-top: 30px;
+          display: flex;
+          .nav__news{
+            margin-left: 60px;
+            font-weight: 300;
+            font-size: 40px; 
+            color:#FFFFFF;   
+            cursor: pointer;
+          }
+          .nav__news:first-child{
+              margin-left: 0px;
+          }
+      }
+    }
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color:#2e1932;
+    .main__inner{
+        margin-left: 90px;
+        margin-right: 90px;
+        .main__news{
+            display: flex;
+            flex-wrap: wrap;
+            border: 4px solid #FFFFFF;
+            margin-top: 100px;
+            .news__picture{
+                width: 50%;
+                display: flex;
+                .news-img{
+                    width: 100%;
+                }
+            }
+            .news__text{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                
+                .news__title{
+                    margin-left: 40px;
+                    font-weight: 500;
+                    font-size: 48px;
+                    margin-top: 20px;
+                }
+                .news__data{
+                    margin-left: 40px;
+                    font-style: italic;
+                    font-weight: 100;
+                    font-size: 20px;
+                }
+                .text{
+                    margin-left: 40px;
+                    font-style: italic;
+                    font-weight: 300;
+                    font-size: 40px;
+                    margin-top: 35px
+                }
+            }
+        }
+        .main__news:first-child{
+            margin-top: 50px;
+        }
+    }
+}
+
+
+@import "_adaptive.scss";
